@@ -84,5 +84,5 @@ Properties with 1,200+ reviews command $392/night on average — but this reflec
 cause higher prices. For new listings, set pricing based on comparable property characteristics and let volume accumulate naturally over time.
 
 ## Dashboard
-<img width="759" height="429" alt="image" src="https://github.com/user-attachments/assets/832acaf6-04f3-4021-943c-5e7a36d119cb" />
-https://lookerstudio.google.com/reporting/c0d8483b-5363-4d54-b646-320884c914c5 
+<img width="1168" height="666" alt="image" src="https://github.com/user-attachments/assets/93ccdf61-340d-459b-b693-985258462237" />
+
