@@ -1,7 +1,5 @@
-# nyc-airbnb-market-analysis-summary
-SQL + Looker Studio analysis of 39,881 NYC Airbnb listings. Explores pricing patterns, neighbourhood performance, room type distribution and availability trends across New York City boroughs. End-to-end project: data extraction, cleaning, EDA and dashboard.
-
 # NYC Airbnb Market Analysis
+Excel + MySQL + Looker Studio analysis of 39,881 NYC Airbnb listings. Explores pricing patterns, neighbourhood performance, room type distribution and availability trends across New York City boroughs. End-to-end project: data extraction, cleaning, EDA and dashboard.
 
 ## Business Problem
 Analyse the New York City short-term rental market to identify pricing patterns, availability trends, and neighbourhood performance across 39,881 listings.
@@ -20,28 +18,26 @@ Analyse the New York City short-term rental market to identify pricing patterns,
 
 ## Methodology
 Analytical Methodology: Five-Phase Framework 
-
-1. DISCOVERY (Microsoft Excel)
+**1. DISCOVERY (Microsoft Excel)**
   - Explored 39,881 records across 75 variables
   - Identified 6 business-critical dimensions as key columns
-2. QUALITY ASSESSMENT OF KEY COLUMNS (Microsoft Excel)
+**2. QUALITY ASSESSMENT OF KEY COLUMNS (Microsoft Excel)**
   - Found 41% missing data for neighbourhood column
   - Identified format/type inconsistencies for price and bathrooms columns
-3. CLEANSE & TRANSFORMATION (MySQL)
+**3. CLEANSE & TRANSFORMATION (MySQL)**
   - Alternative sourcing for missing data (use of neighbourhood_cleansed column)
   - Pattern matching for price standardization
   - Text-to-numeric conversion for bathrooms
-4. ANALYSIS & VALIDATION (MySQL)
+**4. ANALYSIS & VALIDATION (MySQL)**
   - Multi-dimensional SQL analysis
   - Tested 6 price predictors
   - Statistical validation of findings
-5. COMMUNICATION OF INSIGHTS (Looker Studio)
+**5. COMMUNICATION OF INSIGHTS (Looker Studio)**
   - Business-focused dashboard
   - Actionable recommendations
   - Visual clarity prioritized
 
 ## Key Findings
-
 **1. Data Quality — Significant issues resolved before analysis**
 - The `neighbourhood` column had 41% missing values (16,414 out of 39,881 records), which would have compromised all geographic analysis. Resolved by using the `neighbourhood_cleansed` column (0% missing).
 
