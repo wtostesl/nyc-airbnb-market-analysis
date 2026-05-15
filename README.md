@@ -19,30 +19,33 @@ Analyse the New York City short-term rental market to identify pricing patterns,
 - Are there any relationships in the data that could be used as predictors of the rental price?
 
 ## Methodology
-Analytical Methodology: Five-Phase Framework
- 1 – DISCOVERY (Microsoft Excel)
-   • Explored 39,881 records across 75 variables
-   • Identified 6 business-critical dimensions as key columns
- 2 – QUALITY ASSESSMENT OF KEY COLUMNS (Microsoft Excel)
-   • Found 41% missing data for neighbourhood column
-   • Identified format/type inconsistencies for price and bathrooms columns
- 3 - CLEANSE & TRANSFORMATION (MySQL)
-   • Alternative sourcing for missing data (use of neighbourhood_cleansed column)
-   • Pattern matching for price standardization
-   • Text-to-numeric conversion for bathrooms
- 4 - ANALYSIS & VALIDATION (MySQL)
-   • Multi-dimensional SQL analysis
-   • Tested 6 price predictors
-   • Statistical validation of findings
- 5 – COMMUNICATION OF INSIGHTS (Looker Studio)
-   • Business-focused dashboard
-   • Actionable recommendations
-   • Visual clarity prioritized
+Analytical Methodology: Five-Phase Framework 
+
+1. DISCOVERY (Microsoft Excel)
+  - Explored 39,881 records across 75 variables
+  - Identified 6 business-critical dimensions as key columns
+2. QUALITY ASSESSMENT OF KEY COLUMNS (Microsoft Excel)
+  - Found 41% missing data for neighbourhood column
+  - Identified format/type inconsistencies for price and bathrooms columns
+3. CLEANSE & TRANSFORMATION (MySQL)
+  - Alternative sourcing for missing data (use of neighbourhood_cleansed column)
+  - Pattern matching for price standardization
+  - Text-to-numeric conversion for bathrooms
+4. ANALYSIS & VALIDATION (MySQL)
+  - Multi-dimensional SQL analysis
+  - Tested 6 price predictors
+  - Statistical validation of findings
+5. COMMUNICATION OF INSIGHTS (Looker Studio)
+  - Business-focused dashboard
+  - Actionable recommendations
+  - Visual clarity prioritized
 
 ## Key Findings
 
 **1. Data Quality — Significant issues resolved before analysis**
-- The `neighbourhood` column had 41% missing values (16,414 out of 39,881 records), which would have compromised all geographic analysis. Resolved by using the `neighbourhood_cleansed` column (0% missing). Additional type inconsistencies corrected: `price` stored as text with dollar signs, `bathrooms` as descriptive text — both converted to numeric format via SQL pattern matching.
+- The `neighbourhood` column had 41% missing values (16,414 out of 39,881 records), which would have compromised all geographic analysis. Resolved by using the `neighbourhood_cleansed` column (0% missing).
+
+- Additional type inconsistencies corrected: `price` stored as text with dollar signs, `bathrooms` as descriptive text — both converted to numeric format via SQL pattern matching.
 
 **2. Top 5 Most Expensive Neighbourhoods**
 - Fort Wadsworth leads at **$650/night — 285% above the city average of $169**.
