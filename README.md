@@ -18,20 +18,25 @@ Analyse the New York City short-term rental market to identify pricing patterns,
 
 ## Methodology
 Analytical Methodology: Five-Phase Framework 
+
 **1. DISCOVERY (Microsoft Excel)**
   - Explored 39,881 records across 75 variables
   - Identified 6 business-critical dimensions as key columns
+
 **2. QUALITY ASSESSMENT OF KEY COLUMNS (Microsoft Excel)**
   - Found 41% missing data for neighbourhood column
   - Identified format/type inconsistencies for price and bathrooms columns
+
 **3. CLEANSE & TRANSFORMATION (MySQL)**
   - Alternative sourcing for missing data (use of neighbourhood_cleansed column)
   - Pattern matching for price standardization
   - Text-to-numeric conversion for bathrooms
+
 **4. ANALYSIS & VALIDATION (MySQL)**
   - Multi-dimensional SQL analysis
   - Tested 6 price predictors
   - Statistical validation of findings
+
 **5. COMMUNICATION OF INSIGHTS (Looker Studio)**
   - Business-focused dashboard
   - Actionable recommendations
